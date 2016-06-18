@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.example.yusuf.pedometer0.MainActivity">
+
+
+    <LinearLayout
+        android:id="@+id/parentLayout"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <ToggleButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="StepCounter Toggle"
+            android:id="@+id/countingToggle"
+            android:layout_gravity="center_horizontal"
+            android:checked="false"
+            android:textColorHighlight="@android:color/holo_blue_dark"
+            android:textColorHint="@android:color/holo_red_dark"
+            android:textColor="#bab13504"
+            android:singleLine="false"
+            android:elegantTextHeight="false"
+            android:alpha="0.975"
+            android:allowUndo="false"
+            android:theme="@android:style/Theme.Holo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Counted Steps"
+            android:id="@+id/stepCountTxV"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#270800"
+            android:textColorHighlight="#e6005c"
+            android:textColorHint="#5595d4"
+            android:typeface="serif"
+            android:textStyle="bold|italic"
+            android:textSize="20dp"
+            android:alpha="0.95" />
+
+    </LinearLayout>
+</RelativeLayout>
